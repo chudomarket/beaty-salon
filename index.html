@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Салон краси Beauté</title>
+  <style>
+    /* Нульові відступи та базові стилі */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #fff;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      color: #c71585; /* Приклад кольору */
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: #555;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: #c71585;
+    }
+
+    /* Контейнер для основного контенту */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #fff;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    /* Секції з заголовками */
+    section {
+      margin-bottom: 40px;
+    }
+
+    section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      color: #c71585;
+      border-bottom: 2px solid #c71585;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style: disc;
+      margin-left: 20px;
+    }
+
+    /* Оформлення списку відгуків */
+    .reviews {
+      margin-top: 20px;
+    }
+    .review {
+      background: #f9f9f9;
+      padding: 15px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+    .review strong {
+      color: #c71585;
+    }
+
+    /* Галерея */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 5px;
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Прайс-таблиця */
+    .price-list {
+      margin-top: 20px;
+    }
+    .price-list ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .price-list li {
+      background: #f9f9f9;
+      margin-bottom: 5px;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .price-list li span {
+      font-weight: bold;
+      color: #c71585;
+    }
+
+    /* Акції/знижки */
+    .promotions {
+      background: #ffeefc;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 5px;
+      border: 1px solid #ffcce6;
+    }
+    .promotions p {
+      margin: 5px 0;
+      color: #c71585;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #fff;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    }
+    footer p {
+      margin: 5px 0;
+      color: #333;
+    }
+    footer a {
+      color: #c71585;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Салон краси Beauté</h1>
+    <nav>
+      <a href="#about">Про нас</a>
+      <a href="#services">Послуги</a>
+      <a href="#reviews">Відгуки</a>
+      <a href="#gallery">Наші роботи</a>
+      <a href="#price">Прайс</a>
+      <a href="#contacts">Контакти</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <!-- Блок з описом салону -->
+    <section id="about">
+      <h2>Ласкаво просимо до салону краси Beauté!</h2>
+      <p>
+        Ми раді вітати вас у місці, де турбота про вашу красу та самопочуття — наша головна мета. 
+        У нашому салоні ми пропонуємо широкий спектр послуг, які допоможуть вам відчувати себе впевнено та красиво. 
+        Ми використовуємо тільки найкращі засоби та сучасні технології, щоб досягти найкращих результатів.
+      </p>
+    </section>
+
+    <!-- Послуги -->
+    <section id="services">
+      <h2>Наші послуги</h2>
+      <ul>
+        <li><strong>Перукарські послуги:</strong> стрижки, фарбування, укладки, стрижка бороди та багато іншого.</li>
+        <li><strong>Манікюр і педикюр:</strong> класичний, апаратний, гель-лак, нарощування нігтів.</li>
+        <li><strong>Послуги для обличчя:</strong> доглядові процедури, корекція брів, нарощування вій, макіяж.</li>
+        <li><strong>Масаж і СПА-процедури:</strong> розслаблюючі та відновлювальні процедури для тіла.</li>
+        <li><strong>Солярій:</strong> ідеальний загар протягом всього року.</li>
+      </ul>
+      <p><strong>Чому обирають нас?</strong></p>
+      <ul>
+        <li>Професійні майстри з багаторічним досвідом.</li>
+        <li>Індивідуальний підхід до кожного клієнта.</li>
+        <li>Тільки якісні та безпечні косметичні засоби.</li>
+        <li>Сучасні методики та обладнання.</li>
+      </ul>
+      <p>
+        У нашому салоні ви не тільки отримаєте професійні послуги, але й отримаєте задоволення від атмосфери затишку та гармонії. 
+        Ми створюємо простір для вашого відпочинку та відновлення. Дозвольте собі розкіш бути красивими кожного дня!
+      </p>
+    </section>
+
+    <!-- Відгуки -->
+    <section id="reviews">
+      <h2>Відгуки наших клієнтів</h2>
+      <div class="reviews">
+        <div class="review">
+          <p><strong>Наталя:</strong> «Дуже задоволена послугами цього салону! Мої волосся виглядають неймовірно після стрижки та фарбування. Мастера уважні та професійні, атмосфера дуже затишна.»</p>
+        </div>
+        <div class="review">
+          <p><strong>Оксана:</strong> «Тут працюють справжні професіонали! Манікюр тримається вже понад два тижні, виглядає ідеально. Я залишилася дуже задоволена.»</p>
+        </div>
+        <div class="review">
+          <p><strong>Аліна:</strong> «Відвідувала цей салон вперше і точно повернуся знову! Прекрасне обслуговування, майстер пофарбувала волосся так, як я мріяла. Рекомендую всім!»</p>
+        </div>
+        <div class="review">
+          <p><strong>Марина:</strong> «Дякую салону за чудову атмосферу та висококласне обслуговування! Мої вії виглядають просто чудово, а процедура була дуже комфортною.»</p>
+        </div>
+        <div class="review">
+          <p><strong>Ірина:</strong> «У салоні працюють дуже досвідчені майстри. Стрижка та укладка просто на висоті! Атмосфера приємна, і я завжди отримую максимум задоволення від візиту.»</p>
+        </div>
+        <div class="review">
+          <p><strong>Тетяна:</strong> «Нарешті знайшла свій ідеальний салон! Дуже задоволена манікюром, майстер професіонал. Обов’язково буду приходити знову.»</p>
+        </div>
+        <div class="review">
+          <p><strong>Світлана:</strong> «Відвідала цей салон для чистки обличчя та корекції брів. Все зробили на вищому рівні, результат приголомшливий! Тепер буду постійно користуватись їхніми послугами.»</p>
+        </div>
+        <div class="review">
+          <p><strong>Людмила:</strong> «Чудовий салон з найкращими майстрами! Всі процедури зроблені професійно, результат завжди радує. Рекомендую кожному.»</p>
+        </div>
+        <div class="review">
+          <p><strong>Маргарита:</strong> «Чудовий сервіс, приємні ціни та висококласне обслуговування! Мої волосся стали набагато здоровіше після процедур відновлення, і я дійсно відчуваю різницю.»</p>
+        </div>
+        <div class="review">
+          <p><strong>Олена:</strong> «Мій перший візит до салону був просто неймовірним! Моїй процедурі не було жодних недоліків. Персонал дуже привітний і досвідчений. Чудове місце для відпочинку та краси!»</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Галерея (Наші роботи) -->
+    <section id="gallery">
+      <h2>Наші роботи</h2>
+      <div class="gallery">
+        <!-- Замість src підставте ваші зображення -->
+        <img src="images/volos1.jpg" alt="Манікюр 1">
+        <img src="images/volos2.jpg" alt="Манікюр 2">
+        <img src="images/volos3.jpg" alt="Макіяж 1">
+        <img src="images/volos4.jpg" alt="Макіяж 2">
+        <img src="images/volos5.jpg" alt="Манікюр 3">
+        <img src="images/volos6.jpg" alt="Манікюр 4">
+        <img src="images/volos7.jpg" alt="Манікюр 5">
+        <img src="images/volos8.jpg" alt="Зачіска 1">
+        <img src="images/volos9.jpg" alt="Зачіска 2">
+      </div>
+    </section>
+
+    <!-- Прайс -->
+    <section id="price">
+      <h2>Прайс</h2>
+      <div class="price-list">
+        <ul>
+          <li><span>Стрижка жіноча —</span> 450 грн</li>
+          <li><span>Манікюр класичний —</span> 500 грн</li>
+          <li><span>Фарбування волосся —</span> від 1000 грн</li>
+        </ul>
+      </div>
+
+      <!-- Акції/знижки -->
+      <div class="promotions">
+        <p>Скидка 20% на перше відвідування!</p>
+        <p>Акція: манікюр + педикюр за зниженою ціною!</p>
+        <p>Скидка 10% якщо приведеш подругу</p>
+      </div>
+    </section>
+
+    <!-- Контакти -->
+    <section id="contacts">
+      <h2>Контакти</h2>
+      <p><strong>Адреса:</strong> Україна, м. Харків, Астрономічна, 37, к. 61.</p>
+      <p><strong>Номер телефону:</strong> 099-188-68-19</p>
+      <p><strong>Instagram:</strong> <a href="https://instagram.com/_ddaashkkaa" target="_blank">@_ddaashkkaa</a></p>
+      <p><strong>Час роботи:</strong> з 08:00 до 20:00, перерва з 12:00 до 13:00, без вихідних.</p>
+      <p>Запишіться на процедуру вже сьогодні і почніть піклуватися про себе разом з нами.</p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Салон краси Beauté. Всі права захищені.</p>
+    <p>Розроблено з любов'ю для найкращого обслуговування.</p>
+  </footer>
+</body>
+</html>
